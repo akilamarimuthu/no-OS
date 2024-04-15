@@ -37,6 +37,8 @@ ifeq (stm32,$(strip $(PLATFORM)))
 SRCS += $(PLATFORM_DRIVERS)/stm32_delay.c \
 	$(PLATFORM_DRIVERS)/stm32_gpio.c \
 	$(PLATFORM_DRIVERS)/stm32_spi.c \
+	$(PLATFORM_DRIVERS)/stm32_dma.c  \
+	$(PLATFORM_DRIVERS)/stm32_pwm.c  \
 	$(PLATFORM_DRIVERS)/stm32_i2c.c \
 	$(PLATFORM_DRIVERS)/stm32_irq.c \
 	$(PLATFORM_DRIVERS)/stm32_gpio_irq.c \
@@ -49,6 +51,8 @@ INCS +=	$(INCLUDE)/no_os_delay.h \
 	$(PLATFORM_DRIVERS)/stm32_irq.h \
 	$(PLATFORM_DRIVERS)/stm32_gpio_irq.h \
 	$(PLATFORM_DRIVERS)/stm32_spi.h \
+	$(PLATFORM_DRIVERS)/stm32_dma.h  \
+	$(PLATFORM_DRIVERS)/stm32_pwm.h  \
 	$(PLATFORM_DRIVERS)/stm32_i2c.h \
 	$(PLATFORM_DRIVERS)/stm32_gpio.h \
 	$(PLATFORM_DRIVERS)/stm32_hal.h
